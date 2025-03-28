@@ -44,6 +44,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "f35c0514-8cfe-45a1-abfa-41105f7f1f65"
+      }
+    },
+    "owner": "anshulkardam"
   }
 }
