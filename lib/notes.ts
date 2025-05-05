@@ -11,3 +11,6 @@
 //router.replace vs router.navigate vs router.push // know when to use what
 
 // text inside touchabpe opacity somwhere// check error logs
+
+//libraries to checkout - flashlist, react native mmkv, zeego and moti by fernando rojo, react native bottom tabs,
+// start using expo-image import { Image } from 'expo-image';
