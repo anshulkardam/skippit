@@ -1,4 +1,7 @@
-import { ColorSchemeProvider, useColorSchemeContext } from "@/contexts/ColorSchemeProvider";
+import {
+  ColorSchemeProvider,
+  useColorSchemeContext,
+} from "@/contexts/ColorSchemeProvider";
 import "../global.css";
 import {
   Poppins_400Regular,
@@ -14,7 +17,6 @@ import {
 } from "@react-navigation/native";
 import { Slot, SplashScreen } from "expo-router";
 import { useEffect } from "react";
-import { useColorScheme } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 SplashScreen.preventAutoHideAsync();
@@ -40,7 +42,6 @@ const InitialLayout = () => {
   return <Slot />;
 };
 
-
 const ThemeWrapper = () => {
   const { scheme } = useColorSchemeContext();
   const theme = scheme === "dark" ? DarkTheme : DefaultTheme;
@@ -50,11 +51,9 @@ const ThemeWrapper = () => {
       <InitialLayout />
     </ThemeProvider>
   );
-}
-
+};
 
 const RootLayout = () => {
-  
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <ColorSchemeProvider>
